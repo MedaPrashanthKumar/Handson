@@ -1,0 +1,44 @@
+  
+
+<!-- Template driven form -->
+<div class="row d-block mx-auto">
+  
+  <div class="col-sm-2"></div>
+  
+  <div class="col-sm-6">
+   
+      <form #ref="ngForm" (ngSubmit)="onSubmit(ref)" >
+          <!-- user Radio button -->
+          <div class="form-check form-switch">
+              <input class="form-check-input" type="radio" id="user" name="usertype" value="user" ngModel>
+              <label class="form-check-label" for="user"><i class="far fa-user"></i> User</label>
+            </div>
+            <!-- Admin radio button -->
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="radio" id="admin" name="usertype" value="admin" ngModel>
+              <label class="form-check-label" for="admin"><i class="fas fa-users-cog"></i> Admin</label>
+            </div>
+          <!-- username -->
+          <div class="form-floating mt-3">
+                  <input type="text" class="form-control" id="un" placeholder="username" name="username" ngModel>
+                   <label for="un">Username</label>
+          </div>
+          <!-- Password -->
+              <div class="form-floating mb-3 mt-3">
+                  <input type="password" class="form-control" id="pw" placeholder="Password" name="password" ngModel>
+                  <label for="pw">Password</label>
+              </div>
+              
+
+                  <button type="submit"class="btn btn-success"> Login </button>
+      </form>
+  </div>
+  <div class="col-sm-4"></div>
+  
+  
+</div>
+
+
+ 
+  <!-- ------------------------------------------------Placeholder Directive--------------------------------------------------------------------------------- -->
+  <router-outlet>  </router-outlet> 

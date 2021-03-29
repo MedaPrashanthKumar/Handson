@@ -1,0 +1,59 @@
+ 
+    <h4 class="text-center">Welcome Admin </h4>
+    <button  (click)="logOut()" class="btn btn-danger">Logout</button>
+            <!------------------------------Product Creation Forms  --------------------------------->
+    
+            <div class="container-fluid">
+                
+                
+            
+                <div class="row mt-5">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <form #formRef="ngForm" (ngSubmit)="onSubmit(formRef)">
+            
+                            
+                            <!-- product-id -->
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="pi" placeholder="Product Id" name="productid" ngModel>
+                                <label for="pi">Product Id</label>
+                            </div>
+            
+                            <!-- product-name -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="pn" placeholder="Product Name" name="productname" ngModel>
+                                <label for="pn">Product Name</label>
+                            </div>
+            
+                            <!-- product-brand -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="pb" placeholder="Product Brand" name="productbrand" ngModel>
+                                <label for="pb">Product Brand</label>
+                            </div> 
+            
+                            <!-- product-price -->
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="pp" placeholder="Product Price" name="productprice" ngModel>
+                                <label for="pp">Product Price</label>
+                            </div>
+            
+                            <!-- file choosen -->
+                            <div class="mb-3">
+                                <input type="file" class="form-control" (change)="incomingfile($event)" name="photo" accepy="image/" placeholder="Upload file">
+                            </div>
+                            
+                            <!-- submit button -->
+                            <button class="btn btn-primary">Add To Home Page</button>
+                            
+                        </form>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            
+            
+            
+
+                <!-- Placeholder Directive -->
+
+ 

@@ -1,0 +1,12 @@
+POST http://localhost:3000/admin/createadmin
+Content-Type:application/json
+
+    {
+    "username":"admin",
+    
+    "email":"admin@outlook.com",
+
+    "phonenumber":"1234567890",
+
+    "password":"admin"
+   } 
